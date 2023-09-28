@@ -435,10 +435,10 @@ ace.define("ace/mode/renpy", ["require", "exports", "module", "ace/lib/oop", "ac
   let TextMode = ace.require("ace/mode/text").Mode;
   let RenpyHighlightRules = ace.require("ace/mode/renpy_highlight_rules").RenpyHighlightRules;
   let Range = ace.require("ace/range").Range;
-  let FoldMode = ace.require("ace/mode/folding/renpy").FoldMode;
+  let RenpyFoldMode = ace.require("ace/mode/folding/renpy").FoldMode;
   let Mode = function () {
     this.HighlightRules = RenpyHighlightRules;
-    this.foldingRules = new FoldMode();
+    this.foldingRules = new RenpyFoldMode("\\:");
     this.$behaviour=this.$defaultBehaviour
   };
   oop.inherits(Mode, TextMode);
