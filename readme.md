@@ -1,5 +1,9 @@
-# Acode plugin
+# Ren'Py For Acode
 
-> For typescript version of plugin template switch this repo to main-ts
+An plugin that adds rich support for the Ren'Py programming language to Acode Editor.
 
-Read acode plugin [documentation](https://acode.foxdebug.com/plugin-docs) to develop plugin for acode editor.
+## Features
+### Syntax Highlighting
+> The syntax highlight depending on the syntax theme used. In this case [Default Acode Theme]
+
+### Snippets

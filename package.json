@@ -1,10 +1,10 @@
 {
-  "name": "acode-plugin",
-  "version": "1.0.2",
-  "description": "Template for Acode plugin",
+  "name": "Ren'Py for Acode",
+  "version": "1.0.0",
+  "description": "Ren'Py mode support for Acode Editor",
   "main": "dist/main.js",
-  "repository": "https://github.com/deadlyjack/acode-plugin.git",
-  "author": "Ajit <me@ajitkumar.dev>",
+  "repository": "https://github.com/ArjuLaka/Acode-Plugin-Renpy.git",
+  "author": "Arju Laka",
   "license": "MIT",
   "dependencies": {
     "html-tag-js": "^1.1.22"

@@ -6,11 +6,11 @@
   "readme": "readme.md",
   "icon": "icons.png",
   "files": [],
-  "minVersionCode" : 290,
+  "minVersionCode" : 292,
   "price": 0,
   "author": {
     "name": "Arju Laka",
     "email": "arjulaka14@gmail.com",
-    "github": ""
+    "github": "ArjuLaka"
   }
 }
