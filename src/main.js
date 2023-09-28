@@ -1,6 +1,6 @@
 import './renpy_highlight_rules';
 
-import renpyIcon from '../icons.png';
+import renpyIcon from './renpy.svg';
 import plugin from '../plugin.json';
 
 const Url = acode.require('url');

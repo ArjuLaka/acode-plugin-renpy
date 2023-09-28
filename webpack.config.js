@@ -16,6 +16,10 @@ module.exports = (env, options) => {
         },
       ],
     },
+    {
+      test: /\.(svg|png)$/,
+      loader: 'file-loader',
+    }
   ];
 
   const main = {
