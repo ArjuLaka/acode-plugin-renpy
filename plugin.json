@@ -1,16 +1,16 @@
 {
-  "id": "acode.plugin",
-  "name": "Plugin",
+  "id": "acode.plugin.renpy",
+  "name": "Renpy Modes",
   "main": "dist/main.js",
   "version": "1.0.0",
   "readme": "readme.md",
-  "icon": "icon.png",
+  "icon": "icons.png",
   "files": [],
   "minVersionCode" : 290,
   "price": 0,
   "author": {
-    "name": "",
-    "email": "",
+    "name": "Arju Laka",
+    "email": "arjulaka14@gmail.com",
     "github": ""
   }
 }
