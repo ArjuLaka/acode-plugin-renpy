@@ -429,12 +429,12 @@ ace.define("ace/mode/folding/renpy", ["require", "exports", "module", "ace/lib/o
   }).call(FoldMode.prototype);
   })
 
-ace.define("ace/mode/renpy", ["require", "exports", "module", "ace/lib/oop", "ace/mode/text", "ace/mode/renpy_highlight_rules", "ace/mode/range", "ace/mode/folding/cstyle"], function (require, exports, module) {
+ace.define("ace/mode/renpy", ["require", "exports", "module", "ace/lib/oop", "ace/mode/text", "ace/mode/renpy_highlight_rules", "ace/range", "ace/mode/folding/renpy"], function (require, exports, module) {
   "use strict";
   let oop = ace.require("ace/lib/oop");
   let TextMode = ace.require("ace/mode/text").Mode;
   let RenpyHighlightRules = ace.require("ace/mode/renpy_highlight_rules").RenpyHighlightRules;
-  let Range = ace.require("ace/mode/range").Range;
+  let Range = ace.require("ace/range").Range;
   let FoldMode = ace.require("ace/mode/folding/renpy").FoldMode;
   let Mode = function () {
     this.HighlightRules = RenpyHighlightRules;
