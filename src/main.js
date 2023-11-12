@@ -1,14 +1,16 @@
 import './renpy_highlight_rules';
-
 import renpyIcon from './renpy.svg';
 import plugin from '../plugin.json';
+import snippetText from './renpy_snippets'
 
+const fs = acode.require('fs');
 const Url = acode.require('url');
+const snippetManager = ace.require('ace/snippets').snippetManager;
 const { addMode, removeMode } = acode.require('aceModes');
 
 class AcodePlugin {
   #style;
-
+  
   async init(firstTime) {
     this.#style = <style
       textContent={
@@ -23,11 +25,13 @@ class AcodePlugin {
         }`
       }
     ></style>
-
+    const { editor } = editorManager;
+    editor.setOption('enableBasicAutocompletion', true);
+    editor.setOption('enableLiveAutocompletion', true);
 
     addMode('renpy', ['rpy', 'rpym'], "Ren'Py");
     document.head.append(this.#style);
-
+    snippetManager.register(snippetText)
     if (!firstTime) return;
 
     editorManager.files.forEach(file => {
@@ -37,7 +41,7 @@ class AcodePlugin {
       }
     });
   }
-
+  
   async destroy() {
     this.#style.remove();
     removeMode('renpy');
@@ -49,7 +53,6 @@ class AcodePlugin {
       }
     });
   }
-
 }
 
 if (window.acode) {

@@ -1,6 +1,6 @@
 {
   "id": "acode.plugin.renpy",
-  "name": "Renpy Modes",
+  "name": "Ren'Py",
   "main": "dist/main.js",
   "version": "1.0.0",
   "readme": "readme.md",
@@ -9,7 +9,7 @@
   "minVersionCode" : 292,
   "price": 0,
   "author": {
-    "name": "Arju Laka",
+    "name": "Arju Laka Khairu",
     "email": "arjulaka14@gmail.com",
     "github": "ArjuLaka"
   }

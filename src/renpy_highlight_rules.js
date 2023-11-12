@@ -12,14 +12,14 @@ ace.define("ace/mode/renpy_highlight_rules", ["require", "exports", "module", "a
         "finally|for|from|global|if|import|in|is|lambda|not|or|pass|print|" +
         "raise|return|try|while|with|yield|async|await|nonlocal|" +
         //renpy keywords
-        "add|always|at|attribute|auto|bar|behind|block|call|camera|choice|" +
-        "contains|dismiss|default|define|del|drag|event|frame|grid|group|" +
+        "$|add|always|animation|at|attribute|auto|bar|behind|block|call|camera|choice|clear|circles|" +
+        "clockwise|contains|counterclockwise|dismiss|default|define|del|drag|event|early|frame|grid|group|" +
         "expression|has|hbox|hide|hotbar|hotspot|image|imagebutton|imagemap|" +
-        "index|init|jump|label|layeredimage|menu|mousearea|music|nearrect|" +
-        "new|null|nvl|old|offset|on|onlayer|parallel|pass|pause|play|python|" +
-        "queque|repeat|scene|screen|set|show|strings|stop|style|sound|sustain|" +
-        "textbutton|tag|text|time|timer|title|transclude|transform|translate|" +
-        "to|use|vbar|vbox|viewport|voice|vpgrid|window|zorder"
+        "index|init|jump|key|knot|label|layeredimage|menu|mousearea|music|nearrect|nointeract|" +
+        "new|null|nvl|old|offset|on|onlayer|parallel|pass|pause|play|python|queque|raise|" +
+        "rpy|repeat|scene|screen|side|set|show|showif|strings|stop|style|sound|sustain|" +
+        "testcase|textbutton|take|tag|text|time|timer|title|transclude|transform|" +
+        "translate|to|use|vbar|vbox|viewport|voice|vpgrid|window|zorder"
     );
 
     var builtinConstants = (
@@ -45,7 +45,7 @@ ace.define("ace/mode/renpy_highlight_rules", ["require", "exports", "module", "a
         "support.function": builtinFunctions,
         "variable.language": "self|cls",
         "constant.language": builtinConstants,
-        "keyword": keywords
+        "keyword": keywords,
     }, "identifier");
 
     var strPre = "[uU]?";
