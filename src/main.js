@@ -22,7 +22,11 @@ class AcodePlugin {
           background-repeat: no-repeat;
           height: 1em;
           width: 1em;
-        }`
+        }
+        .ace_renpyAnimation{
+          color: #ebe128;
+        }
+        `
       }
     ></style>
     const { editor } = editorManager;

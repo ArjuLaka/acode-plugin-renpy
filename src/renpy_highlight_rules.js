@@ -13,13 +13,20 @@ ace.define("ace/mode/renpy_highlight_rules", ["require", "exports", "module", "a
         "raise|return|try|while|with|yield|async|await|nonlocal|" +
         //renpy keywords
         "$|add|always|animation|at|attribute|auto|bar|behind|block|call|camera|choice|clear|circles|" +
-        "clockwise|contains|counterclockwise|dismiss|default|define|del|drag|event|early|frame|grid|group|" +
+        "@|clockwise|contains|counterclockwise|dismiss|default|define|del|drag|event|early|frame|grid|group|" +
         "expression|has|hbox|hide|hotbar|hotspot|image|imagebutton|imagemap|" +
         "index|init|jump|key|knot|label|layeredimage|menu|mousearea|music|nearrect|nointeract|" +
-        "new|null|nvl|old|offset|on|onlayer|parallel|pass|pause|play|python|queque|raise|" +
+        "new|null|nvl|old|on|onlayer|parallel|pass|pause|play|python|queue|raise|" +
         "rpy|repeat|scene|screen|side|set|show|showif|strings|stop|style|sound|sustain|" +
         "testcase|textbutton|take|tag|text|time|timer|title|transclude|transform|" +
         "translate|to|use|vbar|vbox|viewport|voice|vpgrid|window|zorder"
+    );
+    
+    var renpyAnimations = (
+        "anchor|angle|additive|align|alignaround|alpha|around|blur|crop|crop_relatives|delay|ease|" +
+        "easein|easeout|events|fit|hover|idle|linear|maxsize|offset|radius|rotate|size|xanchor|" +
+        "xalign|xcenter|xoffset|xpan|xpos|xsize|xtile|xysize|xycenter|xzoom|yanchor|yalign|ycenter|" +
+        "yoffset|ypan|ypos|ysize|ytile|yzoom|zoom|dissolve|fade|pos"
     );
 
     var builtinConstants = (
@@ -46,6 +53,7 @@ ace.define("ace/mode/renpy_highlight_rules", ["require", "exports", "module", "a
         "variable.language": "self|cls",
         "constant.language": builtinConstants,
         "keyword": keywords,
+        "renpyAnimation": renpyAnimations,
     }, "identifier");
 
     var strPre = "[uU]?";
@@ -149,7 +157,7 @@ ace.define("ace/mode/renpy_highlight_rules", ["require", "exports", "module", "a
             regex: "[\\]\\)\\}]"
         }, {
             token: ["keyword", "text", "entity.name.function"],
-            regex: "(def|class)(\\s+)([\\u00BF-\\u1FFF\\u2C00-\\uD7FF\\w]+)"
+            regex: "(def|class|call|label|image|jump|menu|screen|transform)(\\s+)([\\u00BF-\\u1FFF\\u2C00-\\uD7FF\\w]+)"
          }, {
             token: "text",
             regex: "\\s+"

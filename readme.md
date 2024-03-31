@@ -12,17 +12,17 @@ Feel free to [contribute](https://github.com/ArjuLaka/acode-plugin-renpy), fork 
 
 ## Features
 ### Syntax Highlighting
-<img src="https://i.imgur.com/GI9NLpL.gif" height="120px" width="100%" style="object-fit:cover;" >
+![Renpy GIF 01](/assets/renpy01.gif)
 
 > The syntax highlight depending on the syntax theme used. In this case [Default Acode Theme]
 
-### Auto Completion
-<img src="https://i.imgur.com/9mipr2p.gif" height="190px" width="100%" style="object-fit: cover; object-position: 100% 10%">
+### Auto Completion  
+![Renpy GIF 02](/assets/renpy02.gif)
 
 > Displays a pop-up auto-complete menu with context-appropriate choices as you type your script or enter screen properties.
 
 ### Snippets
-<img src="https://i.imgur.com/9VMUQqT.gif" height="160px" width="100%" style="object-fit: cover; object-position: 100% 0">
+![Renpy GIF 03](/assets/renpy03.gif)
 
 ## Thanks To:
 - [LuqueDaniel/vscode-language-renpy](https://github.com/LuqueDaniel/vscode-language-renpy)
