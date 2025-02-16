@@ -4,7 +4,9 @@ An plugin that adds rich support for the Ren'Py programming language to Acode Ed
 
 ### Extension:
 - **.rpy**
+- **.rpyc**
 - **.rpym**
+- **.rpa**
 
 Snippets converted from [Ren'Py language support in Atom](https://github.com/renpy/language-renpy)
 
