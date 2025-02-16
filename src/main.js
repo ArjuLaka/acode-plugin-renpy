@@ -40,7 +40,7 @@ class AcodePlugin {
 
     editorManager.files.forEach(file => {
       // update session mode
-      if (Url.extname(file.name) === '.rpy' || '.rpym') {
+      if (Url.extname(file.name) === '.rpy' || '.rpym' || '.rpyc' || '.rpa') {
         file.session.setMode('ace/mode/renpy');
       }
     });
